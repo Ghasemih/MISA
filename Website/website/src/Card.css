@@ -1,0 +1,36 @@
+.card{
+    height: 10cm;
+    width: 8cm;
+}
+
+.card-body{
+    background: lightgray;
+}
+
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-size: 6mm;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgb(1,0.2,0.3,13) !important;
+}
+
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.card-img-top{
+    Transform: scale(1);
+}
+
+.card-img-top:hover{
+    transform: scale(1.9);
+}
