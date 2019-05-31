@@ -11,9 +11,50 @@ import "./App.css"
     state = { 
         on : false,
         txt: "Contact",
-        // pd : [ {}
 
-        // ]
+        pd : [ 
+          {
+            id : 1,
+            title: "Stories & Poems",
+            p :  "Write your own stories and poems, and read others",
+            image : misa,
+         },
+
+          {
+            id : 2,
+            title: "Events",
+            p :  "Check out our event dates and make plans",
+            image : img,
+        },
+
+          {
+            id : 3,
+            title: "Members & Sponsers",
+            p :  "Misa members roles with their contact info",
+            image : misa,
+        },
+
+        {
+          id : 4,
+          title: "Academic",
+          p :  "Learn course better and find tutors around you",
+          image : misa,
+      },
+
+      {
+        id : 5,
+        title: "McMaster Information",
+        p :  "Enhance your knowledge & information about McMaster University",
+        image : misa,
+    },
+
+      {
+        id : 6,
+        title: "News & Performance",
+        p :  "Discover news & perfomances in McMaster and Hamilton",
+        image : misa,
+    }
+         ],
     }
 
     toggle = () =>{
@@ -31,26 +72,42 @@ import "./App.css"
             <h1>MISA
             <img src={misa} className= "App-misa" alt="misa"/>
             </h1>
+            
             <div  className="App-header"> 
+              <Cardrow 
+              img1={this.state.pd[0].image} 
+              title1={this.state.pd[0].title} 
+              p1 = {this.state.pd[0].p}
 
-              <Cardrow img1={misa} img2={img}   
-              title1="Stories & Poems" title2="Events"
-              p1 = "Write your own stories and poems, and read others"
-              p2 = "Check out our event dates and make plans"
+              img2={this.state.pd[1].image}   
+              title2={this.state.pd[1].title}              
+              p2 = {this.state.pd[1].p}
+              /> 
+
+
+              <Cardrow  
+              img1={this.state.pd[2].image} 
+              title1={this.state.pd[2].title} 
+              p1 = {this.state.pd[2].p}
+
+
+              img2={this.state.pd[3].image}   
+              title2={this.state.pd[3].title}              
+              p2 = {this.state.pd[3].p}
               />  
 
-              <Cardrow img1={misa} img2={misa}   
-              title1="Members & Sponsers" title2="Academic"
-              p1 = "Misa members roles with their contact info"
-              p2 = "Learn course better and find tutors around you"
-              />  
+              <Cardrow  
+              img1={this.state.pd[4].image} 
+              title1={this.state.pd[4].title} 
+              p1 = {this.state.pd[4].p}
 
-              <Cardrow img1={misa} img2={misa}   
-              title1="McMaster Information" title2="News & Performance"
-              p1 = "Enhance your knowledge & information about McMaster University"
-              p2 = "Discover news & perfomances in McMaster and Hamilton"
+
+              img2={this.state.pd[5].image}   
+              title2={this.state.pd[5].title}              
+              p2 = {this.state.pd[5].p}
               />  
-            </div >        
+            </div >      
+            
         </div>
       
             <div className="button"> 

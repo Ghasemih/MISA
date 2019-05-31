@@ -13,6 +13,8 @@ const Card = props =>{
                 <p className="card-text"> {props.p}</p>
                 <a href="#" className="btn btn-info" role="button">Click right here</a>
             </div >
+            
+                
         </div>
     );
 }
