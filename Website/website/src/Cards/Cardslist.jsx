@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './CardUI'
-import './Card.css';
+import '../Css/Card.css'
 
 const Cardrow = props =>{
     return (
@@ -17,12 +17,14 @@ const Cardrow = props =>{
               img={props.img1} 
               Title={props.title1}
               p={props.p1}
+              ad={props.add1}
               /></div>
 
               <div className="col-md-3"><Card 
               img={props.img2} 
               Title={props.title2}
               p={props.p2}
+              ad={props.add2}
               /></div>
 
               <div className="col-md-3">

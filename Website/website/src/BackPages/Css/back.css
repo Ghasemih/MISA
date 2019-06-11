@@ -1,0 +1,33 @@
+.back{
+    position: relative;
+    display: flex;
+    background-color: #282c34;
+    height: 17cm;
+}
+.image{
+    position: relative;
+    display: flex;
+    /* float: left; */
+    padding-left: 11cm;
+    padding-top: 5cm; 
+    
+}
+
+.image1{
+    position: relative;
+    display: flex;
+    /* float: left; */
+    padding-top: 5cm;
+    padding-left: 7cm;
+    
+}
+
+.img-top{
+    Transform: scale(1.1);
+}
+
+.img-top:hover{
+    transform: scale(1.4);
+    box-shadow: 5px 10px 20px 1px rgb(1,1,1,0.7) !important;
+}
+

@@ -1,5 +1,6 @@
-import React from "react";
-import './Card.css';
+import React from "react"
+import '../Css/Card.css'
+
 
 const Card = props =>{
     return(
@@ -11,7 +12,7 @@ const Card = props =>{
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.Title}</h4> 
                 <p className="card-text"> {props.p}</p>
-                <a href="#" className="btn btn-info" role="button">Click right here</a>
+                <a href={props.ad} className="btn btn-info" role="button" target="_self">Click right here</a>
             </div >
             
                 

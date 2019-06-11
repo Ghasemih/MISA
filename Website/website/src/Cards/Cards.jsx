@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import Cardrow from './Cardslist';
-import misa from './Images/misa.jpg'
-import img from './Images/9.jpg'
-import "./App.css"
+import React, { Component } from 'react'
+import Cardrow from './Cardslist'
+import misa from '../Images/misa.jpg'
+import img from '../Images/9.jpg'
+import "../Css/App.css"
 
 
 
- class Cards extends Component {
+
+class Cards extends Component {
 
     state = { 
         on : false,
-        txt: "Contact",
+        txt: "All the rights of this website are reserved by Hamid Ghasemi,   contact: ghasemih@mcmaster.ca",
 
         pd : [ 
           {
@@ -18,6 +19,7 @@ import "./App.css"
             title: "Stories & Poems",
             p :  "Write your own stories and poems, and read others",
             image : misa,
+            add : "/story",
          },
 
           {
@@ -25,6 +27,7 @@ import "./App.css"
             title: "Events",
             p :  "Check out our event dates and make plans",
             image : img,
+            add : "/event",
         },
 
           {
@@ -32,6 +35,7 @@ import "./App.css"
             title: "Members & Sponsers",
             p :  "Misa members roles with their contact info",
             image : misa,
+            add : "/members",
         },
 
         {
@@ -39,6 +43,7 @@ import "./App.css"
           title: "Academic",
           p :  "Learn course better and find tutors around you",
           image : misa,
+          add : "/academic",
       },
 
       {
@@ -46,6 +51,7 @@ import "./App.css"
         title: "McMaster Information",
         p :  "Enhance your knowledge & information about McMaster University",
         image : misa,
+        add : "/info",
     },
 
       {
@@ -53,6 +59,7 @@ import "./App.css"
         title: "News & Performance",
         p :  "Discover news & perfomances in McMaster and Hamilton",
         image : misa,
+        add : "/news",
     }
          ],
     }
@@ -78,10 +85,12 @@ import "./App.css"
               img1={this.state.pd[0].image} 
               title1={this.state.pd[0].title} 
               p1 = {this.state.pd[0].p}
+              add1 ={this.state.pd[0].add}
 
               img2={this.state.pd[1].image}   
               title2={this.state.pd[1].title}              
               p2 = {this.state.pd[1].p}
+              add2 ={this.state.pd[1].add}
               /> 
 
 
@@ -89,29 +98,36 @@ import "./App.css"
               img1={this.state.pd[2].image} 
               title1={this.state.pd[2].title} 
               p1 = {this.state.pd[2].p}
+              add1 ={this.state.pd[2].add}
 
 
               img2={this.state.pd[3].image}   
               title2={this.state.pd[3].title}              
               p2 = {this.state.pd[3].p}
+              add2 ={this.state.pd[3].add}
               />  
 
               <Cardrow  
               img1={this.state.pd[4].image} 
               title1={this.state.pd[4].title} 
               p1 = {this.state.pd[4].p}
+              add1 ={this.state.pd[4].add}
 
 
               img2={this.state.pd[5].image}   
               title2={this.state.pd[5].title}              
               p2 = {this.state.pd[5].p}
+              add2 ={this.state.pd[5].add}
               />  
             </div >      
             
         </div>
       
             <div className="button"> 
-            {this.state.on && <h2>{this.state.txt}</h2>}
+            {this.state.on && 
+            <p>
+              <font color="aqua"> {this.state.txt} </font>
+            </p>}
             <button className="btn btn-primary" onClick={this.toggle}>Show Contact info</button> 
             </div>
 

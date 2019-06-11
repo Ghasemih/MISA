@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-
-
+import './Css/index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import Cards from './Cards';
+import Main from './Main';
 
-ReactDOM.render(<Cards/>, document.getElementById('root'));
+
+ReactDOM.render(<Main />, document.getElementById('root'));
 
