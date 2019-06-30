@@ -2,20 +2,41 @@
   text-align: center;
 }
 
-.App-misa{
+.misa-logo{
   animation: App-logo-spin infinite 10s linear;
   height: 20vmin;
   padding-left: 100mm;
   pointer-events: none;
 }
 
-.body-misa{
+.misa-image{
+  position: absolute;
+  margin-left: 12cm;
+  height: 31mm;
+  width: 6cm;
+}
+
+.mcmaster{
+  float: left;
+  margin-left: 35mm;
+  height: 31mm;
+  width: 4cm;
+
+}
+  /* Misa Header */
+
+.misa-header{
+  position: relative;
   font-family: arial;
   font-size: 0.01pt;
   background-color: goldenrod;
+  
 
 }
-.App-header {
+
+  /* Misa background */
+
+.misa-back {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
@@ -24,6 +45,7 @@
   font-size: 20px;
 }
 
+  /* Rotation of the misa logo */
 
 @keyframes App-logo-spin {
   from {
@@ -34,6 +56,7 @@
   }
 }
 
+
 .button{
   padding-top: 5mm;
   padding-bottom: 5mm;
@@ -41,11 +64,14 @@
   align-content: center;
 }
 
+
 h1{
-  font-size:75px;
+  font-size:80px;
   height:100px;
-  padding-left: 0mm;
+  margin-right: 43mm;
+  margin-bottom: 5mm;
   }
+
 
 h2{
   font-size:75px;

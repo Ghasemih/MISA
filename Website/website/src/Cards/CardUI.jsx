@@ -4,7 +4,7 @@ import '../Css/Card.css'
 
 const Card = props =>{
     return(
-        <div className="card text-center" >
+        <div className="card" >
             <div className="overflow">
                 <img src={props.img} alt="MISA" className="card-img-top"/>  
             </div>
@@ -12,7 +12,7 @@ const Card = props =>{
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.Title}</h4> 
                 <p className="card-text"> {props.p}</p>
-                <a href={props.ad} className="btn btn-info" role="button" target="_self">Click right here</a>
+                <a href={props.ad} className="btn btn-info">Click right here</a>
             </div >
             
                 

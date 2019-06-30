@@ -29,6 +29,8 @@
     
 }
 
+/* Doesn't let the picture overflow inside the container */
+
 .overflow{
     overflow: hidden;
 }
@@ -37,9 +39,12 @@
     Transform: scale(1);
 }
 
+/* When mouse gouse on the icons, it gets larger because of the scale and hover the rest of picture which is outside of the container*/
+
 .card-img-top:hover{
     transform: scale(1.6);
 }
+
 
 .spons1{
     position: relative;

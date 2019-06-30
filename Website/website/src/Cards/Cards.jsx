@@ -3,6 +3,8 @@ import Cardrow from './Cardslist'
 import misa from '../Images/misa.jpg'
 import img from '../Images/9.jpg'
 import "../Css/App.css"
+import img1 from '../Images/Mc.png'
+import mcmaster from '../Images/Mac.png'
 
 
 
@@ -32,8 +34,8 @@ class Cards extends Component {
 
           {
             id : 3,
-            title: "Members & Sponsers",
-            p :  "Misa members roles with their contact info",
+            title: "Members & Pictures",
+            p :  "Misa members roles with  contact info and pictures of last years",
             image : misa,
             add : "/members",
         },
@@ -41,7 +43,7 @@ class Cards extends Component {
         {
           id : 4,
           title: "Academic",
-          p :  "Learn course better and find tutors around you",
+          p :  "Learn courses better and find tutors around you",
           image : misa,
           add : "/academic",
       },
@@ -75,12 +77,15 @@ class Cards extends Component {
   render() {
     return (
       <div className="App">
-        <div  className="body-misa" >   
+        <div  className="misa-header" >   
+            <img src={img1} className="misa-image" alt="misa"/>
             <h1>MISA
-            <img src={misa} className= "App-misa" alt="misa"/>
+            <img src={misa} className= "misa-logo" alt="misa"/>
+            <img src={mcmaster} className="mcmaster" alt="misa"/>
             </h1>
             
-            <div  className="App-header"> 
+            
+            <div  className="misa-back"> 
               <Cardrow 
               img1={this.state.pd[0].image} 
               title1={this.state.pd[0].title} 

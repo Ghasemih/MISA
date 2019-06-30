@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './Css/index.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import Main from './Main';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+import Main from './Main'
 
 
 ReactDOM.render(<Main />, document.getElementById('root'));
